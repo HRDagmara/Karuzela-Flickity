@@ -37,6 +37,11 @@
   		<div class="carousel-cell" id="carousel-cell5" style="background-image: url(images/zara.jpg)">
   			<div class="container">Zara</div>
 		</div>
+		<div id="page-wrapper" class="containermap">
+			<h3>My Google Maps</h3>
+			<p id="infos"></p>
+    		<div id="map"></div>
+		</div>
 		<div class="progress-bar"></div>
 	<script id="template-list-shops" type="x-tmpl-mustache">
 		<div class="container">
@@ -77,5 +82,6 @@
 </script>
 	<script src="/path/to/flickity.pkgd.min.js"></script>
 	<script src="js/index.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhRAj34M59h4QKAmXVBpUp2uMHj4lTLY&callback=initMap"></script>
 </body>
 </html>
