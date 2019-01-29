@@ -1,3 +1,6 @@
+'use strict';
+(function() {
+
 var elem = document.querySelector('.carousel');
 var flkty = new Flickity( elem, {
   // options
@@ -32,3 +35,10 @@ flkty.on( 'scroll', function( progress ) {
   progressBar.style.width = progress * 100 + '%';
 });
 
+var template = document.getElementById('template-list-shops').innerHTML;
+
+Mustache.parse(template);
+
+var generatedHello = Mustache.render(template,slides);
+
+}()
