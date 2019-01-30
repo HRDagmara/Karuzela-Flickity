@@ -3,30 +3,14 @@
 
 var elem = document.querySelector('.carousel');
 var flkty = new Flickity( elem, {
-  // options
   cellAlign: 'left',
   contain: true
 });
-
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.carousel', {
-  // options
-});
-
-var flkty = new Flickity('.carousel');
 
 var previousButton = document.querySelector('.button--previous');
 previousButton.addEventListener( 'click', function() {
   flkty.previous();
 });
-
-var previousWrappedButton = document.querySelector('.button--previous-wrapped');
-previousWrappedButton.addEventListener( 'click', function() {
-  flkty.previous( true );
-});
-
-var flkty = new Flickity('.carousel');
 
 var progressBar = document.querySelector('.progress-bar')
 
@@ -41,4 +25,28 @@ Mustache.parse(template);
 
 var generatedHello = Mustache.render(template,slides);
 
-}()
+window.initMap = function() {
+
+var uluru = {lat: 52.230817, lng: 21.002492};
+var map = new google.maps.Map(document.getElementById('map'), {
+	zoom: 4,
+	center: uluru
+});
+
+var marker = new google.maps.Marker({
+	position: uluru,
+	map: map
+}); 
+var slideWithMarker= '';
+
+for (var i=0; i<slides.lenght; i++) {
+	slideWithMarker += +slides[i]+.push('marker');
+}
+console.log (slideWithMarker);
+}
+})();
+ 
+
+
+	
+	

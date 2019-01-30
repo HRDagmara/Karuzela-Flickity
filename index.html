@@ -14,11 +14,11 @@
 	</div>
 	<p>
 	View:
-  	<a href="#carousel-cell1">Cell 1</a>,
-  	<a href="#carousel-cell2">Cell 2</a>,
-  	<a href="#carousel-cell3">Cell 3</a>,
-  	<a href="#carousel-cell4">Cell 4</a>,
-  	<a href="#carousel-cell5">Cell 5</a>
+  		<a href="#carousel-cell1">Cell 1</a>,
+  		<a href="#carousel-cell2">Cell 2</a>,
+  		<a href="#carousel-cell3">Cell 3</a>,
+  		<a href="#carousel-cell4">Cell 4</a>,
+  		<a href="#carousel-cell5">Cell 5</a>
 	</p>
 	<div class="carousel" data-flickity='{ "hash": true }'>
   		<div class="carousel-cell" id="carousel-cell1" style="background-image: url(images/hm.png)">
@@ -35,52 +35,56 @@
   		</div>
   		<div class="carousel-cell" id="carousel-cell5" style="background-image: url(images/zara.jpg)">
   			<div class="container">Zara</div>
-		</div>
+		</div>	
+		<div class="progress-bar"></div>
 		<div id="page-wrapper" class="containermap">
 			<h3>My Google Maps</h3>
-			<p id="infos"></p>
     		<div id="map"></div>
 		</div>
-		<div class="progress-bar"></div>
-	<script id="template-list-shops" type="x-tmpl-mustache">
-		<div class="container">
-			<header>
-				<title></title>
-			</header>
-			<div id="description"></div>
-		</div>
-	</script>
-	<script>
-	var slides = [
-	{
-		image: 'images/hm.png', 
-		title: 'H&M',
-		description: '<p>Sklep H&M</p> <img src="images/hm.png" alt="H&M"> <p>CH Złote Tarasy</p>'	
-	},
-	{
-		image: 'images/stradivarius.png', 
-		title: 'Stradivarius',
-		description: '<p>Sklep Stradivarius</p> <img src="images/stradivarius.png" alt="Stradivarius"> <p>CH Marki</p>'
-	},
-	{
-		image: 'images/promod.png', 
-		title: 'Promod',
-		description: '<p>Sklep Promod</p> <img src="images/promod.png" alt="Promod"> <p>CH Targówek</p>'
-	}
-	{
-		image: 'images/vistula.jpg', 
-		title: 'Vistula',
-		description: '<p>Sklep Vistula</p> <img src="images/vistula.jpg" alt="Vistula"> <p>CH Wola Park</p>'
-	}
-	{
-		image: 'images/zara.jpg', 
-		title: 'Zara',
-		description: '<p>Sklep Zara</p> <img src="images/zara.jpg" alt="Zara"> <p>CH Galeria Północna</p>'
-	}
-];
-</script>
-	<script src="vendor/flickity.pkgd.min.js"></script>
-	<script src="js/script.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhRAj34M59h4QKAmXVBpUp2uMHj4lTLY&callback=initMap"></script>
-</body>
+		<script id="template-list-shops" type="x-tmpl-mustache">
+			<div class="container">
+				<header>
+					<title></title>
+				</header>
+				<div id="description"></div>
+			</div>
+		</script>
+		<script>
+			var slides = [
+		{
+			image: 'images/hm.png', 
+			title: 'H&M',
+			description: '<p>Sklep H&M</p> <img src="images/hm.png" alt="H&M"> <p>CH Złote Tarasy</p>',
+			coords: {lat: 52.230817, lng: 21.002492}	
+		},
+		{
+			image: 'images/stradivarius.png', 
+			title: 'Stradivarius',
+			description: '<p>Sklep Stradivarius</p> <img src="images/stradivarius.png" alt="Stradivarius"> <p>CH Marki</p>',
+			coords: {lat: 52.308130, lng: 21.087657}	
+		},
+		{
+			image: 'images/promod.png', 
+			title: 'Promod',
+			description: '<p>Sklep Promod</p> <img src="images/promod.png" alt="Promod"> <p>CH Targówek</p>',
+			coords: {lat: 52.304179, lng: 21.058275}	
+		},
+		{
+			image: 'images/vistula.jpg', 
+			title: 'Vistula',
+			description: '<p>Sklep Vistula</p> <img src="images/vistula.jpg" alt="Vistula"> <p>CH Wola Park</p>',
+			coords: {lat: 52.242055, lng: 20.930775}	
+		},
+		{
+			image: 'images/zara.jpg', 
+			title: 'Zara',
+			description: '<p>Sklep Zara</p> <img src="images/zara.jpg" alt="Zara"> <p>CH Galeria Północna</p>',
+			coords: {lat: 52.230817, lng: 21.002492}	
+		},
+		];
+		</script>
+		<script src="vendor/flickity.pkgd.min.js"></script>
+		<script src="js/script.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhRAj34M59h4QKAmXVBpUp2uMHj4lTLY&callback=initMap"></script>
+	</body>
 </html>
