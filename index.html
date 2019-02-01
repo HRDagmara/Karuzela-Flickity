@@ -36,6 +36,7 @@
   		<div class="carousel-cell" id="carousel-cell5" style="background-image: url(images/zara.jpg)">
   			<div class="container">Zara</div>
 		</div>	
+	</div>
 		<div class="progress-bar"></div>
 		<div id="page-wrapper" class="containermap">
 			<h3>My Google Maps</h3>
@@ -55,35 +56,41 @@
 			image: 'images/hm.png', 
 			title: 'H&M',
 			description: '<p>Sklep H&M</p> <img src="images/hm.png" alt="H&M"> <p>CH Złote Tarasy</p>',
-			coords: {lat: 52.230817, lng: 21.002492}	
+			coords: {lat: 52.230817, lng: 21.002492},
+			marker: ''	
 		},
 		{
 			image: 'images/stradivarius.png', 
 			title: 'Stradivarius',
 			description: '<p>Sklep Stradivarius</p> <img src="images/stradivarius.png" alt="Stradivarius"> <p>CH Marki</p>',
-			coords: {lat: 52.308130, lng: 21.087657}	
+			coords: {lat: 52.308130, lng: 21.087657},
+			marker: ''		
 		},
 		{
 			image: 'images/promod.png', 
 			title: 'Promod',
 			description: '<p>Sklep Promod</p> <img src="images/promod.png" alt="Promod"> <p>CH Targówek</p>',
-			coords: {lat: 52.304179, lng: 21.058275}	
+			coords: {lat: 52.304179, lng: 21.058275},
+			marker: null		
 		},
 		{
 			image: 'images/vistula.jpg', 
 			title: 'Vistula',
 			description: '<p>Sklep Vistula</p> <img src="images/vistula.jpg" alt="Vistula"> <p>CH Wola Park</p>',
-			coords: {lat: 52.242055, lng: 20.930775}	
+			coords: {lat: 52.242055, lng: 20.930775},
+			marker: null		
 		},
 		{
 			image: 'images/zara.jpg', 
 			title: 'Zara',
 			description: '<p>Sklep Zara</p> <img src="images/zara.jpg" alt="Zara"> <p>CH Galeria Północna</p>',
-			coords: {lat: 52.230817, lng: 21.002492}	
+			coords: {lat: 52.230817, lng: 21.002492},
+			marker: null		
 		},
 		];
 		</script>
 		<script src="vendor/flickity.pkgd.min.js"></script>
+		<script src="vendor/mustache.js"></script>
 		<script src="js/script.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhRAj34M59h4QKAmXVBpUp2uMHj4lTLY&callback=initMap"></script>
 	</body>

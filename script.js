@@ -25,18 +25,6 @@ Mustache.parse(template);
 
 var generatedHello = Mustache.render(template,slides);
 
-window.initMap = function() {
-
-var uluru = {lat: 52.230817, lng: 21.002492};
-var map = new google.maps.Map(document.getElementById('map'), {
-	zoom: 4,
-	center: uluru
-});
-
-var marker = new google.maps.Marker({
-	position: uluru,
-	map: map
-}); 
 var slideWithMarker= '';
 
 for (var i=0; i<slides.lenght; i++) {
@@ -44,7 +32,23 @@ for (var i=0; i<slides.lenght; i++) {
 }
 console.log (slideWithMarker);
 }
+
+window.initMap = function() {
+
+var uluru = {lat: 52.230817, lng: 21.002492};
+var map = new google.maps.Map(document.getElementById('map'), {
+	zoom: 4,
+	center: uluru
+});
+var marker = new google.maps.Marker({
+	position: uluru,
+	map: map
+}); 
+}
 })();
+
+
+
  
 
 
