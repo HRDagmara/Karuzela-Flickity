@@ -3,21 +3,46 @@
 body { font-family: sans-serif; }
 
 .carousel-cell {
+<<<<<<< HEAD
 	width: 100%;
 	height: 50vh;
   min-height: 250px;
 	background-size: cover;
  	border-radius: 5px;
+=======
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  border-radius: 5px;
+>>>>>>> carouselwithmap
   margin-right: 10px;
   counter-increment: carousel-cell;
 }
 
 .container {
+<<<<<<< HEAD
 	width: 700px;
 	text-align: center;
   font-size: 30px;
 }
 
+=======
+  width: 700px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.containermap {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#map {
+  height: 300px;
+  width: 100%;  
+}
+
+>>>>>>> carouselwithmap
 .flickity-button:disabled {
   display: none;
 }
