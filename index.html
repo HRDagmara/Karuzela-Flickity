@@ -4,21 +4,13 @@
   <meta charset="utf-8">
     <title>Karuzela Flickity</title>
     <link rel="stylesheet" href="vendor/normalize.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="vendor/flickity.css" media="screen">
-=======
     <link rel="stylesheet" href="vendor/flickity.min.css" media="screen">
->>>>>>> carouselwithmap
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="button-group">
-<<<<<<< HEAD
-  		<button class="button button--previous">Restart</button>
-=======
   		<button class="button button--previous">Previous</button>
->>>>>>> carouselwithmap
 	</div>
 	<p>
 	View:
@@ -45,26 +37,21 @@
   			<div class="container">Zara</div>
 		</div>	
 	</div>
-		<div class="progress-bar"></div>
-<<<<<<< HEAD
-	<script src="vendor/flickity.pkgd.min.js"></script>
-	<script src="js/script.js"></script>
-</body>
-=======
-		<div id="page-wrapper" class="containermap">
-			<h3>My Google Maps</h3>
-    		<div id="map"></div>
+	<div class="progress-bar"></div>
+	<div id="page-wrapper" class="containermap">
+		<h3>My Google Maps</h3>
+    	<div id="map"></div>
+	</div>
+	<script id="template-list-shops" type="x-tmpl-mustache">
+		<div class="container">
+			<header>
+				<title></title>
+			</header>
+			<div id="description"></div>
 		</div>
-		<script id="template-list-shops" type="x-tmpl-mustache">
-			<div class="container">
-				<header>
-					<title></title>
-				</header>
-				<div id="description"></div>
-			</div>
-		</script>
-		<script>
-			var slides = [
+	</script>
+	<script>
+		var slides = [
 		{
 			image: 'images/hm.png', 
 			title: 'H&M',
@@ -101,11 +88,10 @@
 			marker: null		
 		},
 		];
-		</script>
-		<script src="vendor/flickity.pkgd.min.js"></script>
-		<script src="vendor/mustache.js"></script>
-		<script src="js/script.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhRAj34M59h4QKAmXVBpUp2uMHj4lTLY&callback=initMap"></script>
+	</script>
+	<script src="vendor/flickity.pkgd.min.js"></script>
+	<script src="vendor/mustache.js"></script>
+	<script src="js/script.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhRAj34M59h4QKAmXVBpUp2uMHj4lTLY&callback=initMap"></script>
 	</body>
->>>>>>> carouselwithmap
 </html>
