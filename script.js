@@ -23,7 +23,6 @@
 	var template = document.getElementById('template-list-shops').innerHTML;
 
 	Mustache.parse(template);
-
 	var generatedHello = Mustache.render(template,slides);
 
 	window.initMap = function() {
@@ -53,5 +52,6 @@
 		})
 	}
 })();
+
 
 	
