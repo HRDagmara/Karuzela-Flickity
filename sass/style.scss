@@ -1,48 +1,28 @@
 * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+body { 
+  font-family: sans-serif;
+  width: 1200px;
+}
 
 .carousel-cell {
-<<<<<<< HEAD
-	width: 100%;
+	width: 400px;
 	height: 50vh;
-  min-height: 250px;
 	background-size: cover;
  	border-radius: 5px;
-=======
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  border-radius: 5px;
->>>>>>> carouselwithmap
-  margin-right: 10px;
-  counter-increment: carousel-cell;
-}
-
-.container {
-<<<<<<< HEAD
-	width: 700px;
-	text-align: center;
-  font-size: 30px;
-}
-
-=======
-  width: 700px;
-  text-align: center;
-  font-size: 30px;
+  margin: 0 100px;
 }
 
 .containermap {
-  max-width: 300px;
+  width: 400px;
   margin: 0 auto;
 }
 
 #map {
-  height: 300px;
-  width: 100%;  
+  height: 400px;
+  width: 400px;  
 }
 
->>>>>>> carouselwithmap
 .flickity-button:disabled {
   display: none;
 }
@@ -56,12 +36,6 @@ body { font-family: sans-serif; }
 
 .button-group {
   margin-bottom: 20px;
-}
-
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #333;
 }
 
 .flickity-page-dots {
